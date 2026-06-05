@@ -711,6 +711,7 @@ function Get-NcmDeviceMapViaBrowser {
         if ($SkipComboProbe) { $nodeArgs += '--skip-combo-probe' }
         & node @nodeArgs 2>&1 | ForEach-Object {
             $line = [string]$_
+            if ([string]::IsNullOrWhiteSpace($line)) { return }
             if ($line -match '^\[ncm-map\]') { Write-Log $line "INFO" }
             else                              { Write-Log $line "DEBUG" }
         }

@@ -1066,7 +1066,7 @@ function Invoke-ToolsSetup {
             exit 1
         }
 
-        & winget install --id OpenJS.NodeJS.LTS --accept-source-agreements --accept-package-agreements --silent
+        & winget install --id OpenJS.NodeJS.LTS --scope user --accept-source-agreements --accept-package-agreements --silent
         if ($LASTEXITCODE -ne 0) {
             Write-Log ("winget install failed (exit {0}). Try running as Administrator." -f $LASTEXITCODE) "ERROR"
             exit 1

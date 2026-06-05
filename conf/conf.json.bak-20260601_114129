@@ -1,0 +1,51 @@
+{
+  "version": "1.4.1",
+  "auth": {
+    "url": "https://prod.api.vestas.net/wppconf/api/v1/public/auth"
+  },
+  "internalAuth": {
+    "url": "https://wpp-conf.vestasext.net/login",
+    "host": "wpp-conf.vestasext.net"
+  },
+  "endpoints": [
+    {
+      "name": "DE-HeDreiht - Powerplants with unknown devices",
+      "slug": "de-hedreiht-powerplants",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/powerplants?search=name:DE-HeDreiht&with=unknownDevice"
+    },
+    {
+      "name": "Devices for DE-HeDreiht ",
+      "slug": "devices-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750"
+    },
+    {
+      "name": "NCM Devices for DE-HeDreiht ",
+      "slug": "NCM devices-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/ncmdetails?search=powerplant_id:5750"
+    },
+    {
+      "name": "Asset Details for DE-HeDreiht devices",
+      "slug": "asset-details-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetDetails"
+    },
+    {
+      "name": "Asset + NCM Details for DE-HeDreiht devices",
+      "slug": "asset-ncm-details-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetDetailsAndNcm"
+    },
+    {
+      "name": "Configuration Backup Report for DE-HeDreiht devices (last 3 per device)",
+      "slug": "config-backup-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetConfigBackup"
+    },
+    {
+      "name": "Asset Software / Firmware for DE-HeDreiht devices",
+      "slug": "asset-software-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetSoftware"
+    }
+  ]
+}

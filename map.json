@@ -1,0 +1,1042 @@
+[
+  {
+    "ncm_device_id": 34464,
+    "hostname": "CIAS-0025-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.1.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34424,
+    "hostname": "CIAS-0025-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.1.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36074,
+    "hostname": "CIAS-0065-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "0.1.5 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36070,
+    "hostname": "CIAS-0065-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "0.0.4 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36330,
+    "hostname": "CIAS-0081-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36329,
+    "hostname": "CIAS-0081-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36327,
+    "hostname": "CIAS-0082-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36324,
+    "hostname": "CIAS-0082-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36608,
+    "hostname": "CIAS-0084-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36605,
+    "hostname": "CIAS-0084-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36525,
+    "hostname": "CIAS-0085-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36524,
+    "hostname": "CIAS-0085-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36630,
+    "hostname": "CIAS-0090-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36623,
+    "hostname": "CIAS-0090-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36514,
+    "hostname": "CIAS-0093-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36513,
+    "hostname": "CIAS-0093-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37033,
+    "hostname": "CIAS-0103-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37018,
+    "hostname": "CIAS-0103-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36851,
+    "hostname": "CIAS-0112-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36845,
+    "hostname": "CIAS-0112-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36724,
+    "hostname": "CIAS-0113-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36718,
+    "hostname": "CIAS-0113-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36644,
+    "hostname": "CIAS-0115-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36639,
+    "hostname": "CIAS-0115-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36705,
+    "hostname": "CIAS-0116-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36691,
+    "hostname": "CIAS-0116-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36711,
+    "hostname": "CIAS-0120-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36696,
+    "hostname": "CIAS-0120-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36706,
+    "hostname": "CIAS-0121-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36693,
+    "hostname": "CIAS-0121-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37748,
+    "hostname": "CIAS-0123-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37746,
+    "hostname": "CIAS-0123-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37411,
+    "hostname": "CIAS-0135-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37405,
+    "hostname": "CIAS-0135-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37180,
+    "hostname": "CIAS-0137-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37166,
+    "hostname": "CIAS-0137-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37484,
+    "hostname": "CIAS-0144-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 37388,
+    "hostname": "CIAS-0144-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "1.0.0 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34840,
+    "hostname": "CIAS-HUB-9998-VES1-WAN1",
+    "combos": [
+      {
+        "base_template": "2.0.3 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36252,
+    "hostname": "SP-60423-VES-PMC1-SW1",
+    "combos": [
+      {
+        "base_template": "2.0.5 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32699,
+    "hostname": "SP-60423-VES-WNC1-SW1",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32702,
+    "hostname": "SP-60423-VES-WNC1-SW2",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32695,
+    "hostname": "SP-60423-VES1-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32700,
+    "hostname": "SP-60423-VES1-CORE-SW11",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32692,
+    "hostname": "SP-60423-VES1-CORE-SW12",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32696,
+    "hostname": "SP-60423-VES1-CORE-SW2",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32691,
+    "hostname": "SP-60423-VES1-TOR-SW1",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32690,
+    "hostname": "SP-60423-VES1-TOR-SW2",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32697,
+    "hostname": "SP-60423-VES2-CORE-SW1",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32693,
+    "hostname": "SP-60423-VES2-CORE-SW11",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32694,
+    "hostname": "SP-60423-VES2-CORE-SW12",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32698,
+    "hostname": "SP-60423-VES2-CORE-SW2",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32689,
+    "hostname": "SP-60423-VES2-TOR-SW1",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32688,
+    "hostname": "SP-60423-VES2-TOR-SW2",
+    "combos": [
+      {
+        "base_template": "2.0.6 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36045,
+    "hostname": "SP-60423-WTG001-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36034,
+    "hostname": "SP-60423-WTG001-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36079,
+    "hostname": "SP-60423-WTG002-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 36087,
+    "hostname": "SP-60423-WTG002-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34255,
+    "hostname": "SP-60423-WTG003-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33816,
+    "hostname": "SP-60423-WTG003-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34177,
+    "hostname": "SP-60423-WTG005-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34180,
+    "hostname": "SP-60423-WTG005-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35513,
+    "hostname": "SP-60423-WTG006-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35384,
+    "hostname": "SP-60423-WTG006-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35649,
+    "hostname": "SP-60423-WTG007-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35309,
+    "hostname": "SP-60423-WTG007-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34004,
+    "hostname": "SP-60423-WTG008-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33990,
+    "hostname": "SP-60423-WTG008-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33675,
+    "hostname": "SP-60423-WTG009-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34546,
+    "hostname": "SP-60423-WTG009-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33221,
+    "hostname": "SP-60423-WTG010-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33249,
+    "hostname": "SP-60423-WTG010-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.2.0 AME",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35933,
+    "hostname": "SP-60423-WTG011-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35927,
+    "hostname": "SP-60423-WTG011-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35837,
+    "hostname": "SP-60423-WTG015-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35839,
+    "hostname": "SP-60423-WTG015-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35736,
+    "hostname": "SP-60423-WTG020-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35754,
+    "hostname": "SP-60423-WTG020-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35752,
+    "hostname": "SP-60423-WTG021-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35744,
+    "hostname": "SP-60423-WTG021-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34253,
+    "hostname": "SP-60423-WTG022-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33951,
+    "hostname": "SP-60423-WTG022-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35214,
+    "hostname": "SP-60423-WTG023-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35213,
+    "hostname": "SP-60423-WTG023-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35222,
+    "hostname": "SP-60423-WTG024-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35221,
+    "hostname": "SP-60423-WTG024-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34989,
+    "hostname": "SP-60423-WTG055-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34988,
+    "hostname": "SP-60423-WTG055-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33148,
+    "hostname": "SP-60423-WTG057-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33120,
+    "hostname": "SP-60423-WTG057-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33500,
+    "hostname": "SP-60423-WTG058-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33359,
+    "hostname": "SP-60423-WTG058-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33593,
+    "hostname": "SP-60423-WTG059-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33592,
+    "hostname": "SP-60423-WTG059-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34859,
+    "hostname": "SP-60423-WTG060-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 34855,
+    "hostname": "SP-60423-WTG060-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35105,
+    "hostname": "SP-60423-WTG061-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 35071,
+    "hostname": "SP-60423-WTG061-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33276,
+    "hostname": "SP-60423-WTG062-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33111,
+    "hostname": "SP-60423-WTG062-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33304,
+    "hostname": "SP-60423-WTG063-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 33265,
+    "hostname": "SP-60423-WTG063-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32879,
+    "hostname": "SP-60423-WTG064-NAC-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  },
+  {
+    "ncm_device_id": 32863,
+    "hostname": "SP-60423-WTG064-TOW-SW1",
+    "combos": [
+      {
+        "base_template": "2.3.2 EMEA",
+        "boot_system_bootflash": ""
+      }
+    ]
+  }
+]

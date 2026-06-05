@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& pwsh -NoProfile -File \"$env:TEMP\\\\test-assetsoftware.ps1\"; Write-Output \"EXITCODE\\(pwsh7\\)=$LASTEXITCODE\")",
+      "PowerShell(& powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$env:TEMP\\\\test-assetsoftware.ps1\"; Write-Output \"EXITCODE\\(ps5.1\\)=$LASTEXITCODE\")",
+      "PowerShell($f = 'c:\\\\Jobs\\\\Scripts\\\\Device-Report\\\\Output\\\\diagnostic-ncm-subconfig-36070\\\\2026-05-19\\\\Powerplants_20260519_143308.json'; $j = Get-Content $f -Raw | ConvertFrom-Json; \"disableOrdering=$\\($j.disableOrdering\\)\"; \"statuses in this page:\"; $j.data | Group-Object status | ForEach-Object { \"$\\($_.Name\\)=$\\($_.Count\\)\" }; \"received_at order \\(as returned\\):\"; \\($j.data.received_at\\) -join ' | ')"
+    ]
+  }
+}

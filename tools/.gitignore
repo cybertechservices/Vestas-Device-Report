@@ -1,0 +1,6 @@
+# Don't commit node_modules — npm install reproduces from package.json
+node_modules/
+
+# Test artefacts from npm run test-ncm-map
+test-map.json
+test-cookies.json

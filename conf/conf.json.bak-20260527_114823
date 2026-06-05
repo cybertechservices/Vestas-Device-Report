@@ -1,0 +1,60 @@
+{
+  "version": "1.2.2",
+  "auth": {
+    "url": "https://prod.api.vestas.net/wppconf/api/v1/public/auth"
+  },
+  "internalAuth": {
+    "url": "https://wpp-conf.vestasext.net/login",
+    "host": "wpp-conf.vestasext.net"
+  },
+  "endpoints": [
+    {
+      "name": "DE-HeDreiht - Powerplants with unknown devices",
+      "slug": "de-hedreiht-powerplants",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/powerplants?search=name:DE-HeDreiht&with=unknownDevice"
+    },
+    {
+      "name": "Devices for DE-HeDreiht ",
+      "slug": "devices-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750"
+    },
+    {
+      "name": "NCM Devices for DE-HeDreiht ",
+      "slug": "NCM devices-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/ncmdetails?search=powerplant_id:5750"
+    },
+    {
+      "name": "Asset Details for DE-HeDreiht devices",
+      "slug": "asset-details-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetDetails"
+    },
+    {
+      "name": "Asset + NCM Details for DE-HeDreiht devices",
+      "slug": "asset-ncm-details-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetDetailsAndNcm"
+    },
+    {
+      "name": "Configuration Backup Report for DE-HeDreiht devices (last 3 per device)",
+      "slug": "config-backup-powerplant-5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/devices?search=powerplant_id:5750",
+      "chain": "assetConfigBackup"
+    },
+    {
+      "name": "DIAGNOSTIC: NCM bulk via relationship search",
+      "slug": "diagnostic-ncm-bulk-pp5750",
+      "url": "https://prod.api.vestas.net/wppconf/api/v1/ncm/devices?searchWith=powerplant.id:5750&with=powerplant!ncmConfiguration"
+    },
+    {
+      "name": "DIAGNOSTIC: device-asset-status (internal API, id 5750)",
+      "slug": "diagnostic-device-asset-status-5750",
+      "url": "https://wpp-conf.vestasext.net/internal_api/device-asset-status/5750"
+    },
+    {
+      "name": "DIAGNOSTIC: get-ncm-device-subconfig (full DataTables shape, ncm_device_id 36070)",
+      "slug": "diagnostic-ncm-subconfig-36070",
+      "url": "https://wpp-conf.vestasext.net/get-ncm-device-subconfig?draw=1&columns%5B0%5D%5Bdata%5D=id&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=ncm_device_id&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=ncm_configuration_id&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=false&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=hostname&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=false&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=filename&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=false&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=status&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=received_at&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=false&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=last_configuration_change_at&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=false&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=last_configuration_change_by&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=false&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=false&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&data%5Bncm_device_id%5D=36070&data%5Bhostname%5D=CIAS-0065-VES1-WAN1&data%5Bbase_template%5D=0.0.4%20EMEA&data%5Bboot_system_bootflash%5D=ir1101-universalk9.17.09.06.SPA.bin"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Secrets — never commit.
+conf/.env
+
+# Per-run output, logs, and report files.
+log/
+Output/
+
+# OS / editor noise
+*.tmp
+*~
+.DS_Store
+Thumbs.db

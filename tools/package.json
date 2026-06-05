@@ -1,0 +1,14 @@
+{
+  "name": "device-report-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Headless browser tools that support Device-Reports.ps1 — currently: extract the NCM device map for a powerplant from the wpp-conf.vestasext.net SPA.",
+  "scripts": {
+    "test-ncm-map": "node get-ncm-map.js --powerplant 5750 --out-file test-map.json --cookie-file test-cookies.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "minimist": "^1.2.8",
+    "playwright": "^1.48.0"
+  }
+}

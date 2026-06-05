@@ -1,5 +1,6 @@
 # Secrets — never commit.
 conf/.env
+*.pat
 
 # Per-run output, logs, and report files.
 log/
@@ -11,3 +12,5 @@ Output/
 .DS_Store
 Thumbs.db
 .opencode
+
+claude.md

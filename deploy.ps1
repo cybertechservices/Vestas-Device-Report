@@ -61,36 +61,73 @@ if ([string]::IsNullOrWhiteSpace($pat)) {
 }
 Write-Ok "PAT loaded from: $($patFile.Name)"
 
-# ---------- 2. Git: install via winget if missing --------------------------
+# ---------- 2. Git: install Portable Git if missing (no admin required) ----
+$portableGitDir = Join-Path $env:LOCALAPPDATA "Programs\PortableGit"
+$portableGitExe = Join-Path $portableGitDir "cmd\git.exe"
+
 $gitVer = $null
 try { $gitVer = (& git --version 2>$null) } catch { }
 
 if ([string]::IsNullOrWhiteSpace($gitVer)) {
-    Write-Step "Git not found — installing via winget..."
+    # Check if we already installed Portable Git in a previous run
+    if (Test-Path -LiteralPath $portableGitExe) {
+        $env:Path = "$portableGitDir\cmd;$env:Path"
+        try { $gitVer = (& git --version 2>$null) } catch { }
+    }
+}
 
-    $wingetVer = $null
-    try { $wingetVer = (& winget --version 2>$null) } catch { }
-    if ([string]::IsNullOrWhiteSpace($wingetVer)) {
-        Write-Fail "winget not available. Install Git manually from https://git-scm.com and re-run."
+if ([string]::IsNullOrWhiteSpace($gitVer)) {
+    Write-Step "Git not found — downloading Portable Git (no admin required)..."
+
+    # Resolve the latest Portable Git release via the GitHub API
+    try {
+        $release = Invoke-RestMethod -Uri "https://api.github.com/repos/git-for-windows/git/releases/latest" -UseBasicParsing
+    } catch {
+        Write-Fail "Could not reach GitHub API to resolve Portable Git URL: $($_.Exception.Message)"
         exit 1
     }
 
-    & winget install --id Git.Git --scope user --accept-source-agreements --accept-package-agreements --silent
-    if ($LASTEXITCODE -ne 0) {
-        Write-Fail "winget install Git failed (exit $LASTEXITCODE). Try running as Administrator."
+    $asset = $release.assets |
+             Where-Object { $_.name -match 'PortableGit-.*-64-bit\.7z\.exe$' } |
+             Select-Object -First 1
+
+    if (-not $asset) {
+        Write-Fail "Could not find a PortableGit 64-bit asset in the latest release."
         exit 1
     }
 
-    # Refresh PATH so git is usable in this session
-    $env:Path = [System.Environment]::GetEnvironmentVariable('Path', 'Machine') + ';' +
-                [System.Environment]::GetEnvironmentVariable('Path', 'User')
+    $tmpExe = Join-Path $env:TEMP "PortableGit-setup.exe"
+    Write-Step "Downloading $($asset.name) ($([math]::Round($asset.size/1MB, 1)) MB)..."
+    try {
+        Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $tmpExe -UseBasicParsing
+    } catch {
+        Write-Fail "Download failed: $($_.Exception.Message)"
+        exit 1
+    }
+
+    Write-Step "Extracting to $portableGitDir ..."
+    New-Item -ItemType Directory -Path $portableGitDir -Force | Out-Null
+    & $tmpExe -o"$portableGitDir" -y | Out-Null
+    Remove-Item -LiteralPath $tmpExe -Force -ErrorAction SilentlyContinue
+
+    if (-not (Test-Path -LiteralPath $portableGitExe)) {
+        Write-Fail "Extraction finished but git.exe not found at $portableGitExe."
+        exit 1
+    }
+
+    # Add to PATH for this session and persist for the user
+    $env:Path = "$portableGitDir\cmd;$env:Path"
+    $userPath = [System.Environment]::GetEnvironmentVariable('Path', 'User')
+    if ($userPath -notlike "*PortableGit*") {
+        [System.Environment]::SetEnvironmentVariable('Path', "$portableGitDir\cmd;$userPath", 'User')
+    }
 
     try { $gitVer = (& git --version 2>$null) } catch { }
     if ([string]::IsNullOrWhiteSpace($gitVer)) {
-        Write-Fail "Git installed but still not on PATH — restart the terminal and re-run."
+        Write-Fail "Portable Git extracted but still not usable — check $portableGitDir."
         exit 1
     }
-    Write-Ok "Git installed: $gitVer"
+    Write-Ok "Portable Git installed: $gitVer"
 } else {
     Write-Ok "Git found: $gitVer"
 }

@@ -1039,9 +1039,65 @@ function Resolve-NcmDeviceName {
     }
 }
 
+function Invoke-ToolsSetup {
+    <#
+        Ensures the Node.js tooling under .\tools\ is ready to run.
+        Runs automatically on first use or after a fresh git clone.
+        Exits the script with a clear, actionable message on unrecoverable failure.
+    #>
+    $toolsDir    = Join-Path $PSScriptRoot 'tools'
+    $nodeModules = Join-Path $toolsDir 'node_modules'
+    $playwrightPkg = Join-Path $nodeModules 'playwright'
+
+    Write-LogSection "TOOLS SETUP"
+
+    # 1 — Node.js must be on PATH
+    $nodeVer = $null
+    try { $nodeVer = (& node --version 2>$null) } catch { }
+    if ([string]::IsNullOrWhiteSpace($nodeVer)) {
+        Write-Log "Node.js not found on PATH." "ERROR"
+        Write-Log "Install Node.js LTS and restart the terminal:" "INFO"
+        Write-Log "  winget install OpenJS.NodeJS.LTS" "INFO"
+        exit 1
+    }
+    Write-Log ("Node.js {0} found." -f $nodeVer.Trim()) "SUCCESS"
+
+    # 2 — npm packages (playwright, minimist, dotenv)
+    if (-not (Test-Path -LiteralPath $playwrightPkg)) {
+        Write-Log "npm packages missing — running 'npm install' in tools\ ..." "INFO"
+        Push-Location $toolsDir
+        try {
+            & npm install 2>&1 | ForEach-Object {
+                $line = [string]$_
+                if (-not [string]::IsNullOrWhiteSpace($line)) { Write-Log $line "DEBUG" }
+            }
+        } finally {
+            Pop-Location
+        }
+        if (-not (Test-Path -LiteralPath $playwrightPkg)) {
+            Write-Log "'npm install' completed but playwright package still missing. Check errors above." "ERROR"
+            exit 1
+        }
+        Write-Log "npm packages installed successfully." "SUCCESS"
+    } else {
+        Write-Log "npm packages already installed." "SUCCESS"
+    }
+
+    # 3 — Microsoft Edge must be present (used by get-ncm-map.js via channel:'msedge')
+    $edgePath = "${env:ProgramFiles(x86)}\Microsoft\Edge\Application\msedge.exe"
+    if (-not (Test-Path -LiteralPath $edgePath)) {
+        Write-Log "Microsoft Edge not found at: $edgePath" "WARN"
+        Write-Log "The browser extractor requires Edge. Install it from https://microsoft.com/edge" "WARN"
+    } else {
+        Write-Log "Microsoft Edge found." "SUCCESS"
+    }
+}
+
 #endregion
 
 #region ---------- Setup ------------------------------------------------------
+
+Invoke-ToolsSetup
 
 # ---- Load config and resolve auth + chosen endpoint --------------------------
 try {

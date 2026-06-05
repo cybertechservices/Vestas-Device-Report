@@ -1042,25 +1042,49 @@ function Resolve-NcmDeviceName {
 function Invoke-ToolsSetup {
     <#
         Ensures the Node.js tooling under .\tools\ is ready to run.
+        Installs Node.js via winget if missing, then npm packages.
         Runs automatically on first use or after a fresh git clone.
         Exits the script with a clear, actionable message on unrecoverable failure.
     #>
-    $toolsDir    = Join-Path $PSScriptRoot 'tools'
-    $nodeModules = Join-Path $toolsDir 'node_modules'
+    $toolsDir      = Join-Path $PSScriptRoot 'tools'
+    $nodeModules   = Join-Path $toolsDir 'node_modules'
     $playwrightPkg = Join-Path $nodeModules 'playwright'
 
     Write-LogSection "TOOLS SETUP"
 
-    # 1 — Node.js must be on PATH
+    # 1 — Node.js: install via winget if missing
     $nodeVer = $null
     try { $nodeVer = (& node --version 2>$null) } catch { }
+
     if ([string]::IsNullOrWhiteSpace($nodeVer)) {
-        Write-Log "Node.js not found on PATH." "ERROR"
-        Write-Log "Install Node.js LTS and restart the terminal:" "INFO"
-        Write-Log "  winget install OpenJS.NodeJS.LTS" "INFO"
-        exit 1
+        Write-Log "Node.js not found — installing via winget..." "INFO"
+
+        $wingetVer = $null
+        try { $wingetVer = (& winget --version 2>$null) } catch { }
+        if ([string]::IsNullOrWhiteSpace($wingetVer)) {
+            Write-Log "winget not available. Install Node.js LTS manually from https://nodejs.org and re-run." "ERROR"
+            exit 1
+        }
+
+        & winget install --id OpenJS.NodeJS.LTS --accept-source-agreements --accept-package-agreements --silent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Log ("winget install failed (exit {0}). Try running as Administrator." -f $LASTEXITCODE) "ERROR"
+            exit 1
+        }
+
+        # Refresh PATH in this session so node is immediately usable
+        $env:Path = [System.Environment]::GetEnvironmentVariable('Path', 'Machine') + ';' +
+                    [System.Environment]::GetEnvironmentVariable('Path', 'User')
+
+        try { $nodeVer = (& node --version 2>$null) } catch { }
+        if ([string]::IsNullOrWhiteSpace($nodeVer)) {
+            Write-Log "Node.js installed but still not on PATH — restart the terminal and re-run." "ERROR"
+            exit 1
+        }
+        Write-Log ("Node.js {0} installed." -f $nodeVer.Trim()) "SUCCESS"
+    } else {
+        Write-Log ("Node.js {0} found." -f $nodeVer.Trim()) "SUCCESS"
     }
-    Write-Log ("Node.js {0} found." -f $nodeVer.Trim()) "SUCCESS"
 
     # 2 — npm packages (playwright, minimist, dotenv)
     if (-not (Test-Path -LiteralPath $playwrightPkg)) {
